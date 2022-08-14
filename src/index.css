@@ -8,34 +8,34 @@
 @font-face {
   font-family: "LexendDeca";
   src: local("LexendDeca"),
-    url("./fonts/LexendDeca/LexendDeca-Bold.ttf") format("truetype");
+    url("./client/fonts/LexendDeca/LexendDeca-Bold.ttf") format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "LexendDeca";
   src: local("LexendDeca"),
-    url("./fonts/LexendDeca/LexendDeca-SemiBold.ttf") format("truetype");
+    url("./client/fonts/LexendDeca/LexendDeca-SemiBold.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "LexendDeca";
   src: local("LexendDeca"),
-    url("./fonts/LexendDeca/LexendDeca-Regular.ttf") format("truetype");
+    url("./client/fonts/LexendDeca/LexendDeca-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "LexendDeca";
   src: local("LexendDeca"),
-    url("./fonts/LexendDeca/LexendDeca-Light.ttf") format("truetype");
+    url("./client/fonts/LexendDeca/LexendDeca-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "LexendDeca";
   src: local("LexendDeca"),
-    url("./fonts/LexendDeca/LexendDeca-Thin.ttf") format("truetype");
+    url("./client/fonts/LexendDeca/LexendDeca-Thin.ttf") format("truetype");
   font-weight: 200;
 }

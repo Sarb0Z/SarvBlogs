@@ -1,3 +1,10 @@
+@mixin mobile {
+  @media (max-width:600px){
+    @content;
+  }
+  
+}
+
 .sign-up-page-container {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -16,6 +23,9 @@
       font-weight: 600;
       transform: rotate(-90deg);
       white-space: nowrap;
+    }
+    @include mobile(){
+      visibility: hidden;
     }
   }
 
