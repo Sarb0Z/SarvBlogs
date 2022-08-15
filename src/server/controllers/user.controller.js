@@ -31,6 +31,7 @@ export class Controller {
       // Save user in database
       const createUser = await user.save();
       res.status(201).json({ user: createUser });
+      console.log("user added successfully")
     } catch (error) {
       res.status(500).json({ message: error.message });
     }
