@@ -1,21 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "../../components/Input/Input.jsx";
+import addUser from "../../api/addUser.js";
 
 import "./SignUp.scss";
 
 const SignUp = () => {
-  // eslint-disable-next-line no-undef
-  const [inputs, setInputs] = useState({});
+  // const [form, setForm] = React.useState({
+  //   fullname: '',
+  //   email: '',
+  //   password: '',
+  //   password_re: ''
+  // });
+  // const handleChange = (e) => {
+  //   setForm({
+  //     ...form,
+  //     [e.id]: e.value,
+  //   });
+  // };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   setForm({
+  //     fullname: '',
+  //     email: '',
+  //     password: '',
+  //     password_re: ''
+  //   });
 
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs((values) => ({ ...values, [name]: value }));
-  };
+  //   alert(form.email + ' ' + form.fullname + ' ' + form.password);
+  // };
+  const [email, setEmail] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [password, setPassword] = useState("");
+  const [password_re, setPassword_re] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(inputs);
+    // alert(email + ' ' + fullname + ' ' + password);
+    const userData = {
+      fullname: fullname,
+      email: email,
+      password: password,
+    };
+
+    addUser(userData);
+    setEmail("");
+    setFullname("");
+    setPassword("");
+    setPassword_re("");
   };
 
   return (
@@ -35,28 +66,32 @@ const SignUp = () => {
         <p className="form-subheading">Let's sign you up quickly</p>
         <form className="form-input-container" onSubmit={handleSubmit}>
           <Input
+            id="fullname"
             type="text"
             placeholder="Full Name"
-            value={inputs.fullname || ""}
-            onChange={handleChange}
+            value={fullname}
+            onChange={(e) => setFullname(e.target.value)}
           />
           <Input
+            id="email"
             type="email"
             placeholder="Email Address"
-            value={inputs.email || ""}
-            onChange={handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <Input
+            id="password"
             type="password"
             placeholder="Password"
-            value={inputs.password || ""}
-            onChange={handleChange}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <Input
+            id="password_re"
             type="password"
             placeholder="Confirm Password"
-            value={inputs.re_password || ""}
-            onChange={handleChange}
+            value={password_re}
+            onChange={(e) => setPassword_re(e.target.value)}
           />
           <button type="submit" className="submit-button">
             SUBMIT
