@@ -35,7 +35,7 @@ const SignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // alert(email + ' ' + fullname + ' ' + password);
+    alert(email + ' ' + fullname + ' ' + password);
     const userData = {
       fullname: fullname,
       email: email,
