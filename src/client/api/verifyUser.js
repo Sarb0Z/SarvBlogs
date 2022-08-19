@@ -1,12 +1,13 @@
 import axios from "axios";
 
-export default function addUser(userData) {
+// import { getArtistsCache, setArtistsToCache } from '../Cache/artistsCache';
+
+export default function verifyUser(id) {
   (async () => {
     try {
       const user = await axios.request({
-        method: "POST",
-        url: `${process.env.REACT_APP_API_URL}/users`,
-        data: userData,
+        method: "GET",
+        url: `${process.env.REACT_APP_API_URL}/users/${id}`,
       });
       console.log(user.data);
       alert(JSON.stringify(user.data));

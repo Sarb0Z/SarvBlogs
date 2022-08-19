@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../../components/Input/Input";
+import verifyUser from "../../api/verifyUser";
 const SignIn = () =>{
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -10,6 +11,8 @@ const SignIn = () =>{
           email: email,
           password: password,
         };
+        verifyUser(userData);
+
     }
     
     return (
