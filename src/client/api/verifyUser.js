@@ -6,8 +6,8 @@ export default function verifyUser(id) {
   (async () => {
     try {
       const user = await axios.request({
-        method: "GET",
-        url: `${process.env.REACT_APP_API_URL}/users/${id}`,
+        method: "POST",
+        url: `${process.env.REACT_APP_API_URL}/users/login`,
       });
       console.log(user.data);
       alert(JSON.stringify(user.data));
