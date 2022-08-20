@@ -12,6 +12,7 @@ const SignIn = () =>{
           password: password,
         };
         verifyUser(userData);
+        
 
     }
     
@@ -25,7 +26,7 @@ const SignIn = () =>{
               backgroundSize: "cover",
             }}
           >
-            <h1>Sign Up</h1>
+            <h1>Sign In</h1>
           </div>
           <div className="form-container">
             <h1>Welcome</h1>

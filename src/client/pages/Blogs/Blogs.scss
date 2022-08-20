@@ -1,0 +1,190 @@
+.blog-page-container {
+    /* Home-Desktop */
+    position: relative;
+    width: 1280px;
+    height: 748px;
+
+    background: #FFFFFF;
+
+    .top-tag{
+        
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        left: 190.17px;
+        top: 41.23px;
+
+        /* Primary */
+
+        background: #56CC6A;
+    }
+    .top-tag-title {
+        position: absolute;
+        width: 61px;
+        height: 25px;
+        left: 188.47px;
+        top: 49.23px;
+
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #272727;
+    }
+
+    .sidebar-container {
+        /* Rectangle 4 */
+            position: absolute;
+            width: 95px;
+            height: 748px;
+            left: 0px;
+            top: 0px;
+
+            background: #272727;
+            box-shadow: 8px 0px 28px -9px rgba(0, 0, 0, 0.25);
+
+            .image-container-1 {
+                
+                position: absolute;
+                left: 2.58%;
+                right: 95.13%;
+                top: 18%;
+                bottom: 78.14%;
+                
+                /* Primary */
+                
+                background: #56CC6A;
+            }
+            .image-tag-1 {
+                position: absolute;
+                width: 52px;
+                height: 19.73px;
+                left: 26px;
+                top: 169.14px;
+                
+                font-family: 'Lexend Deca';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+                
+                
+                color: #FFFFFF;
+            }
+            
+            .image-container-2 {
+                                
+                position: absolute;
+                left: 2.45%;
+                right: 94.95%;
+                top: 30.96%;
+                bottom: 64.64%;
+
+                /* Primary */
+
+                background: #56CC6A;
+            }
+
+            .image-tag-2 {
+                position: absolute;
+                width: 50px;
+                height: 19.73px;
+                left: 23px;
+                top: 267.77px;
+                
+                font-family: 'Lexend Deca';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height */
+                
+                
+                color: #FFFFFF;
+            }
+    }
+
+    .main-scrollable {
+        .date {
+            position: absolute;
+            width: 88.64px;
+            height: 30.86px;
+            left: 190.17px;
+            top: 118.14px;
+
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+
+            color: #272727;
+
+        }
+        .title {
+            position: absolute;
+            width: 887px;
+            height: 44px;
+            left: 188.47px;
+            top: 153.3px;
+            
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 44px;
+            /* identical to box height */
+            
+            
+            /* Primary */
+            
+            color: #56CC6A;
+            
+        }
+        .paragraph {
+
+            position: absolute;
+            width: 876px;
+            height: 154px;
+            left: 188.47px;
+            top: 216.3px;
+            
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            
+            color: #272727;
+            
+        }
+        .author {
+            /* @samurai2099 */
+
+
+            position: absolute;
+            width: 113px;
+            height: 20px;
+            left: 188.47px;
+            top: 385.48px;
+
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+
+
+            /* Secondary */
+
+            color: #A5A5A5;
+        }
+
+    }
+}
