@@ -7,10 +7,10 @@ const Blogs = () => {
   useEffect(() => {
     getBlogs(blogs, setBlogs);
     console.log(blogs);
-  }, []);
+  },[]);
   return (
-    <div className="blog-page-container">
-      <div className="top-tag"></div>
+    <div >
+      {/* <div className="top-tag"></div>
       <div className="top-tag-title">Latest</div>
       <div className="sidebar-container">
         <div
@@ -27,8 +27,8 @@ const Blogs = () => {
           }}
         ></div>
         <div className="image-tag-2">Search</div>
-      </div>
-      <div className="main-scrollable">
+      </div> */}
+      <div >
         {blogs.forEach((blog) => {
           return (
             <>

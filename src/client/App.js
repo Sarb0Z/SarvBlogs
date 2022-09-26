@@ -21,7 +21,7 @@ function App() {
       <Route
         path=""
         element={
-          shouldRedirect ? <Navigate replace to="/sign-in" /> : <Blogs />
+          shouldRedirect ? <Navigate replace to="/sign-in" /> : <SignIn />
         }
       />
     </Routes>
