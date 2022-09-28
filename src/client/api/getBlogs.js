@@ -12,11 +12,12 @@ export default function getBlogs(blogs, setBlogs) {
       const data= JSON.stringify(blogs.data);
       var obj = JSON.parse(data);
       var res = [];
-      console.log(obj);
+      alert(obj);
       for (var i in obj) res.push(obj[i]);
-      console.log(res);
+      alert(res);
       setBlogs(res);
-      console.log(blogs);
+      
+      
       //   alert(follows.data);
     } catch (error) {
       // setError(error);
